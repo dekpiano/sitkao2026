@@ -1,0 +1,6 @@
+# CodeIgniter 4 Default Ignore Rules
+/writable/
+/system/
+/vendor/
+.env
+.phpunit.result.cache

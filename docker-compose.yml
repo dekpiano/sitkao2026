@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sitkao_app
+    ports:
+      - "8096:443"
+      - "8097:80"
+    volumes:
+      - ./:/var/www/html
+    networks:
+      - skj2025_default
+
+networks:
+  skj2025_default:
+    external: true
